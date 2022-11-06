@@ -35,6 +35,28 @@ A Portfolio website project developed by me using hypertext markup language , ja
 3) Learnt about Appscript in google sheets for contact form data
 4) Deployment of a Website on Heroku cloud application
 
+# Technology stack 📝
+
+1) html and css
+
+![image-removebg-preview (15)](https://user-images.githubusercontent.com/74930080/200162330-54a9ac1a-2b7a-4503-a150-565272e0bf39.png)
+
+
+2) javascript
+
+![image-removebg-preview (16)](https://user-images.githubusercontent.com/74930080/200162359-755cd4d7-5d4a-45d1-8bed-06ba671ea20c.png)
+
+
+3) php
+
+![image-removebg-preview (18)](https://user-images.githubusercontent.com/74930080/200162369-f9be20e0-7201-4e7d-9207-4484feddd59a.png)
+
+
+4) heroku
+
+![image-removebg-preview (19)](https://user-images.githubusercontent.com/74930080/200162379-6377f570-a530-4199-9a0f-76dc009f8cf5.png)
+
+
 # Credits 🏅
 
 * Suresh Mahalingam Konar 🧠
