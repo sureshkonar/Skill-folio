@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css "href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Connect </a></li>
+                <li><a href="#">Hackathons</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>CSE Student | Upcoming SDE</p>
+            <h1>Hi, I'm <span>Suresh </span>Konar<br> From Mumbai , India </h1>
+        </div>
+    </div>  
+</div>
+<!-- ----------------------------------about-------------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png" >
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    Hello! <br>
+                    My name is Suresh Mahalingam Konar. I’m a Pre-final Year student from Vellore Institute of Technology Bhopal pursuing my Undergraduate Bachelor’s degree in Computer Science Engineering. I’m on the lookout for an opportunity that’ll let me merge together my passion for problem solving and programming , and kickstart a career in software & IT industries . I enjoy the challenge of working with different types of people and coming up with solutions to difficult problems. <br> It helps that I have a knack for staying calm during a storm!
+                </p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('languages & technologies')">Languages & technologies</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('project work')">Project Work</p>
+                </div>
+
+                <div class="tab-contents active-tab"  id="languages & technologies">
+                    <ul>
+                        <li><span>Programming Languages</span><br> Java (basic) | Python (basic) | c++ (basic) </li>
+                        <li><span>Operating System</span><br>Linux | Windows | Mac OS | Android | iOS | Chrome OS </li>
+                        <li><span>Database Systems</span><br> MySQL </li>
+                        <li><span>Frameworks & Tools</span><br> Django | IntelliJ IDEA | VS code</li>
+                        <li><span>Others</span><br>Github</li>
+
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span> Undergraduate (Pursuing) | Aug 2020 - June 2024 </span><br> Bhopal , India | Vellore Institute of Technology Bhopal <br> Current CGPA : 8.16 </li>
+                        <li><span> Higher Secondary Education | June 2019 - March 2020 </span><br>Mumbai , India | N.E.S Ratnam Junior College Of Science <br> CGPA : 8.61 </li>
+                        <li><span> Seconndary School Education | April 2017 - March 2018 </span><br> Mumbai , India | B.P.E.S Higher Secondary School <br> CGPA : 8.76  </li> 
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="project work">
+                    <ul>
+                        <li><span>Automated Debarred Analysis</span><br> Automated Debarred analysis of students attendance .xlsx data for College <br> Use of pandas and math python package to implement the analysis on the .xlsx data. </li>
+                        
+
+                    </ul>
+                </div>
+
+            </div>  
+        </div>
+    </div>
+</div>
+<!-- ----------------------hackathons------------------------------------------ -->
+<div id="hackathons">
+    <div class="container">
+        <h1 class="sub-title">Hackathons</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-compass-drafting"></i>
+                <h2>Product Design Competition</h2>
+                <h3>By E-Summit'22 <br>
+                    Indian Institute of Technology (IIT), Indore </h3>
+                <p> Task was to suggest changes to the existing user interface of the respective website/app, provided in the problem statement
+                </p>
+                <a href="https://unstop.com/competition/product-design-competition-e-summit22-indian-institute-of-technology-iit-indore-404943">View More</a><br>
+                <a href="https://unstop.com/certificate-preview/149556ee-4615-465c-bf86-37e706a1a354">View Certificate</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-brain"></i>
+                <h2>Machineknight</h2>
+                <h3>By TechBairn <br> A EdTech startup recognised as a MSME </h3>
+                <p> The Problem Statemnent was given and the team needs to submit it within the given time period . The Team need to submit the solution to the problem statement within 48 hours time frame.</p>
+                <a href="https://unstop.com/hackathon/machineknight-techbairn-396001">View More</a><br>
+                <a href="https://unstop.com/certificate-preview/10d5c3b9-6e3c-40fb-8fd4-00954410896e">View Certificate</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-book-open-reader"></i>
+                <h2>Ground Zero
+                </h2>
+                <h3>By TRBS - The Red Brick Summit 2022 <br>
+                    Indian Institute of Management (IIM), Ahmedabad </h3>
+                <p> A case-based round on a real-life problem statement of an NGO or startup. Participants should find an innovative solution and present it in the form of a 5-slide deck
+                </p>
+                <a href="https://unstop.com/competition/ground-zero-trbs-the-red-brick-summit-2022-indian-institute-of-management-iim-ahmedabad-412548">View More</a><br>
+                <a href="https://unstop.com/certificate-preview/bf5cb6b3-d656-47eb-abcf-de9f74ac428d">View Certificate</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<!-- ------------------------------------my profiles--------------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Connect with me</h1>
+        <div class="connect-list">
+            <div class="work">
+                <img src="images/3.png">    
+                <div class="layer">
+                    <h3>Linked In</h3>
+                    <p>I am a CSE student and currently seeking new opportunities. I would love to connect myself and you with other professionals in Computer Science field</p>
+                    <a href="https://www.linkedin.com/in/suresh-konar-779114198/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/4.png">
+                <div class="layer">
+                    <h3>Resume</h3>
+                    <p>I would love to talk about whether my technical skills might fit any of your openings</p>
+                    <a href="https://drive.google.com/file/d/1Nf5HO5zmiXLWvPhaduRDeTle0xFV_utH/view?usp=share_link" download target="_blank"><i class="fa-solid fa-file"></i></a>
+                </div>
+            </div>
+            
+            <div class="work">
+                <img src="images/5.png">
+                <div class="layer">
+                <h3>Github</h3>
+                <p>Hey, Have a look on my project works on github and if you really like any project of mine ,then don't forget to follow me on Github for further updates related to my work  </p>
+                <a href="https://github.com/sureshkonar?tab=repositories" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>    
+            </div>  
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!-- -------------------------contact-------------------------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>  msuresh9122002@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>  +91 9969255962</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/suresh.konar.9809/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/sureshkonar.ig/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/Sureshkonar17" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://api.whatsapp.com/send/?phone=%2B919920330421&text&type=phone_number&app_absent=0" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required >
+                    <input type="email" name="e-mail" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Suresh. Made By  <i class="fa-solid fa-chess-king"></i>  Suresh Mahalingam Konar</p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    
+    var tablinks =document.getElementsByClassName("tab-links");
+    var tabcontents =document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+
+</script>
+    
+<script>
+
+    var sidemenu=document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxu1VOYdH-RGa2JwSQPJkQuT0wdlOXQgeBKQiLIYJrGMwOIHsV6iG4qC9yn60An5aw8Wg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        msg.innerHTML= " Message Sent Successfully"
+        setTimeout(function(){
+            msg.innerHTML=""
+        },5000)
+        form.reset
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>                                        
