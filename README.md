@@ -57,9 +57,18 @@ A Portfolio website project developed by me using hypertext markup language , ja
 ![image-removebg-preview (19)](https://user-images.githubusercontent.com/74930080/200162379-6377f570-a530-4199-9a0f-76dc009f8cf5.png)
 
 
+# Future Advancements ⬆️
+
+1) Including A dedicated project work section to showcase my projects
+2) A section on my recent work and previous work experiences
+
 # Credits 🏅
 
 * Suresh Mahalingam Konar 🧠
+
+# Video 📽️
+
+https://user-images.githubusercontent.com/74930080/200165888-fa5a3aac-bde2-49ee-9697-77c847b7cc1a.mp4
 
 # Link 🔗 
 
