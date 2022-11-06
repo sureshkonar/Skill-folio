@@ -288,6 +288,9 @@ nav ul li a:hover::after{
 
 }
 /* -----------------------------------contact------------------------------ */
+#contact{
+    margin-top: 75px
+}
 .contact-left{
     flex-basis:35%;
 }
