@@ -68,7 +68,7 @@ A Portfolio website project developed by me using hypertext markup language , ja
 
 # Video 📽️
 
-https://user-images.githubusercontent.com/74930080/200165888-fa5a3aac-bde2-49ee-9697-77c847b7cc1a.mp4
+https://user-images.githubusercontent.com/74930080/200166012-372a63c2-b8be-4d13-a754-16e28e5af145.mp4
 
 # Link 🔗 
 
