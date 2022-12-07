@@ -56,6 +56,10 @@ A Portfolio website project developed by me using hypertext markup language , ja
 
 ![image-removebg-preview (19)](https://user-images.githubusercontent.com/74930080/200162379-6377f570-a530-4199-9a0f-76dc009f8cf5.png)
 
+5) github pages
+
+![image-removebg-preview (20)](https://user-images.githubusercontent.com/74930080/206081416-f6c7c82d-1f0e-4aaa-91c7-0bc353a14554.png)
+
 
 # Future Advancements ⬆️
 
