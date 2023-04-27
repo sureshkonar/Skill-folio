@@ -1,4 +1,4 @@
-# Suresh-Porfolio-heroku
+# Suresh-Porfolio
 
 A Portfolio website project developed by me using hypertext markup language , javascript , casscading style sheets , php and hosted the website using Heroku cloud platform 
 
@@ -77,6 +77,6 @@ https://user-images.githubusercontent.com/74930080/200166012-372a63c2-b8be-4d13-
 
 https://sureshkonarportfolio.herokuapp.com/
 
-https://sureshkonar.github.io/suresh-portfolio-heroku/
+https://sureshkonar.github.io/suresh-portfolio/
 
 
