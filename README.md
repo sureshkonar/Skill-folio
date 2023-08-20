@@ -1,6 +1,6 @@
-# Suresh-Porfolio
+# Skill-Folio
 
-A Portfolio website project developed by me using hypertext markup language , javascript , casscading style sheets , php and hosted the website using Heroku cloud platform 
+Discover my expertise through a captivating portfolio website powered by HTML, CSS, and JavaScript. This innovative fusion of technology crafts an interactive showcase of my skills, projects, and achievements. Hosted on GitHub Pages, it's a dynamic testament to my proficiency in web development and design, inviting you to explore my journey
 
 # Portfolio Website Screenshot 🖼️
 
