@@ -26,6 +26,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
+          cache: "npm"
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -33,10 +34,21 @@ jobs:
           static_site_generator: next
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Build with Next.js
-        run: npx next build
+        run: npm run build
+
+      - name: Verify static export output
+        run: |
+          if [ ! -d "out" ]; then
+            echo "Expected static export directory 'out' was not found."
+            echo "Repository root:"
+            ls -la
+            echo "Next build output (.next):"
+            ls -la .next || true
+            exit 1
+          fi
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
