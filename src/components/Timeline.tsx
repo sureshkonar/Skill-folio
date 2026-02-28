@@ -10,7 +10,7 @@ const MILESTONES = [
         organization: "Aptiv",
         description: "Driving automotive innovation through Python ReSim frameworks and high-reliability CAPL libraries. Improving validation efficiency by 35% and automating CI/CT operations.",
         tech: ["Python", "CAPL", "CANoe", "Jenkins"],
-        icon: <Briefcase className="w-5 h-5 text-cyan-500" />,
+        iconName: "Briefcase",
         link: "https://www.aptiv.com",
         id: "MIL_STONE_04"
     },
@@ -20,7 +20,7 @@ const MILESTONES = [
         organization: "VIT Bhopal University",
         description: "Completed undergraduate studies with a CGPA of 8.43. Specialized in scalable automation and embedded systems.",
         tech: ["Computer Science", "Embedded Systems"],
-        icon: <GraduationCap className="w-5 h-5 text-cyan-500" />,
+        iconName: "GraduationCap",
         link: "https://vitbhopal.ac.in",
         id: "MIL_STONE_03"
     },
@@ -30,7 +30,7 @@ const MILESTONES = [
         organization: "Amazon Web Services",
         description: "Validated entry-level cloud concepts and core AWS services.",
         tech: ["AWS", "Cloud Computing"],
-        icon: <Award className="w-5 h-5 text-cyan-500" />,
+        iconName: "Award",
         link: "https://www.credly.com",
         id: "MIL_STONE_02"
     },
@@ -40,11 +40,18 @@ const MILESTONES = [
         organization: "Internal Project",
         description: "Developed an intelligent mobility tolling system using GPS and Cloud IoT, achieving 75% accuracy.",
         tech: ["Python", "AWS IoT Core", "Raspberry Pi"],
-        icon: <Zap className="w-5 h-5 text-cyan-500" />,
+        iconName: "Zap",
         link: "https://github.com/sureshkonar/GeoToll-Link",
         id: "MIL_STONE_01"
     }
 ];
+
+function MilestoneIcon({ name }: { name: string }) {
+    if (name === "GraduationCap") return <GraduationCap className="w-5 h-5 text-cyan-500" />;
+    if (name === "Award") return <Award className="w-5 h-5 text-cyan-500" />;
+    if (name === "Zap") return <Zap className="w-5 h-5 text-cyan-500" />;
+    return <Briefcase className="w-5 h-5 text-cyan-500" />;
+}
 
 export default function Timeline() {
     return (
@@ -58,7 +65,7 @@ export default function Timeline() {
                     <div>
                         <div className="flex items-center gap-2 mb-4">
                             <Zap className="w-4 h-4 text-cyan-500" />
-                            <span className="text-cyan-500 text-[10px] tracking-widest uppercase"&gt;&gt;&gt;> FAST_LANE_METRICS_READY</span>
+                            <span className="text-cyan-500 text-[10px] tracking-widest uppercase">&gt;&gt;&gt; FAST_LANE_METRICS_READY</span>
                         </div>
                         <h2 className="text-4xl md:text-6xl font-black text-white tracking-tighter uppercase italic">
                             The <span className="text-cyan-500">Journey</span>
@@ -92,8 +99,7 @@ export default function Timeline() {
                                     <div className="relative w-full h-full rounded-full bg-black border-2 border-white/10 group-hover:border-cyan-500 transition-colors flex items-center justify-center">
                                         <div className="w-1.5 h-1.5 rounded-full bg-cyan-500 shadow-[0_0_8px_rgba(6,182,212,0.8)]" />
                                     </div>
-
-                                    {/* Light Beam Beam */}
+                                    {/* Light Beam */}
                                     <div className="absolute left-full top-1/2 -translate-y-1/2 w-0 group-hover:w-32 h-[1px] bg-gradient-to-r from-cyan-500 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-700 pointer-events-none" />
                                 </div>
 
@@ -114,9 +120,8 @@ export default function Timeline() {
                                                 {item.organization}
                                             </p>
                                         </div>
-
                                         <div className="flex p-4 rounded-3xl bg-white/[0.02] border border-white/5 text-zinc-700 group-hover:text-cyan-500 group-hover:border-cyan-500/20 group-hover:bg-cyan-500/5 transition-all">
-                                            {item.icon}
+                                            <MilestoneIcon name={item.iconName} />
                                         </div>
                                     </div>
 
@@ -124,7 +129,6 @@ export default function Timeline() {
                                         <p className="text-neutral-500 text-sm md:text-base leading-relaxed mb-8 max-w-2xl font-sans not-italic">
                                             {item.description}
                                         </p>
-
                                         <div className="flex flex-wrap gap-2 mb-8">
                                             {item.tech.map(t => (
                                                 <span key={t} className="text-[8px] px-3 py-1 bg-black border border-white/5 text-zinc-600 uppercase tracking-tighter font-bold rounded-sm group-hover:border-cyan-500/20 transition-colors">
@@ -132,7 +136,6 @@ export default function Timeline() {
                                                 </span>
                                             ))}
                                         </div>
-
                                         <a
                                             href={item.link}
                                             target="_blank"
@@ -150,7 +153,7 @@ export default function Timeline() {
                 </div>
             </div>
 
-            {/* Background Decorative "Velocity" Lines */}
+            {/* Background Decorative Lines */}
             <div className="absolute right-0 top-0 h-full w-32 pointer-events-none opacity-5">
                 <div className="h-full w-full bg-[linear-gradient(to_bottom,transparent_0%,white_50%,transparent_100%)] bg-[length:1px_100%] bg-repeat-x" />
             </div>

@@ -10,7 +10,7 @@ const HACKATHONS = [
         date: "2025",
         description: "Focused on inclusive mobility solutions for future urban environments.",
         tech: ["Product Design", "Mobility"],
-        icon: <Rocket className="w-5 h-5 text-cyan-500" />,
+        iconName: "Rocket",
         url: "https://github.com/sureshkonar/MobilityXIdeathon_BrainBot_Team",
         node: "NODE_ALPHA_01"
     },
@@ -20,7 +20,7 @@ const HACKATHONS = [
         date: "2022",
         description: "Intensive entrepreneurship and business strategy competition at TRBS.",
         tech: ["Strategy", "Innovation"],
-        icon: <Trophy className="w-5 h-5 text-yellow-500" />,
+        iconName: "Trophy",
         url: "https://github.com/sureshkonar?tab=repositories",
         node: "NODE_BETA_02"
     },
@@ -30,11 +30,17 @@ const HACKATHONS = [
         date: "2022",
         description: "National-level design competition part of E-Summit'22.",
         tech: ["Design Thinking", "CAD"],
-        icon: <Code2 className="w-5 h-5 text-zinc-400" />,
+        iconName: "Code2",
         url: "https://github.com/sureshkonar?tab=repositories",
         node: "NODE_GAMMA_03"
     }
 ];
+
+function HackIcon({ name }: { name: string }) {
+    if (name === "Rocket") return <Rocket className="w-5 h-5 text-cyan-500" />;
+    if (name === "Trophy") return <Trophy className="w-5 h-5 text-yellow-500" />;
+    return <Code2 className="w-5 h-5 text-zinc-400" />;
+}
 
 export default function Hackathons() {
     return (
@@ -44,7 +50,7 @@ export default function Hackathons() {
                     <div>
                         <div className="flex items-center gap-2 mb-4">
                             <Radar className="w-4 h-4 text-cyan-500 animate-pulse" />
-                            <span className="text-cyan-500 text-[10px] tracking-widest uppercase"&gt;&gt;&gt;> RADAR_SCAN_ACTIVE</span>
+                            <span className="text-cyan-500 text-[10px] tracking-widest uppercase">&gt;&gt;&gt; RADAR_SCAN_ACTIVE</span>
                         </div>
                         <h2 className="text-4xl md:text-6xl font-black text-white tracking-tighter uppercase italic">
                             Event <span className="text-cyan-500">Nodes</span>
@@ -68,14 +74,13 @@ export default function Hackathons() {
                             viewport={{ once: true }}
                             className="relative p-8 rounded-3xl bg-white/[0.01] border border-white/5 hover:bg-white/[0.03] hover:border-cyan-500/30 transition-all group flex flex-col"
                         >
-                            {/* Decorative Bracket */}
                             <div className="absolute top-0 right-0 w-8 h-8 border-t-2 border-r-2 border-white/5 group-hover:border-cyan-500/30 transition-colors" />
 
                             <div className="flex justify-between items-start mb-8">
                                 <div className="relative">
                                     <div className="absolute inset-0 bg-cyan-500/20 blur-xl opacity-0 group-hover:opacity-100 transition-opacity" />
                                     <div className="relative p-4 rounded-2xl bg-black/40 border border-white/10 group-hover:border-cyan-500/20 transition-all">
-                                        {hack.icon}
+                                        <HackIcon name={hack.iconName} />
                                     </div>
                                 </div>
                                 <span className="text-[10px] text-zinc-700 font-bold group-hover:text-cyan-500 transition-colors">{hack.node}</span>
@@ -86,7 +91,6 @@ export default function Hackathons() {
                                 <h3 className="text-xl text-white font-black mb-4 uppercase tracking-tight group-hover:tracking-wide transition-all italic">
                                     {hack.title}
                                 </h3>
-
                                 <p className="text-zinc-500 text-xs leading-relaxed mb-8 border-l border-white/10 pl-4 py-1">
                                     {hack.description}
                                 </p>
@@ -107,7 +111,6 @@ export default function Hackathons() {
                 </div>
             </div>
 
-            {/* Background Data Stream Effect */}
             <div className="absolute right-0 bottom-0 p-8 opacity-5 pointer-events-none hidden lg:block">
                 <div className="text-[10px] space-y-1 font-mono text-cyan-500">
                     <div>SCANNING_FREQ: 24.5GHZ</div>
