@@ -4,6 +4,7 @@ import { useRef, useEffect, useState } from "react";
 import { useScroll, useTransform, useMotionValueEvent } from "framer-motion";
 
 const FRAME_COUNT = 120;
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 export default function ScrollyCanvas() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -16,7 +17,7 @@ export default function ScrollyCanvas() {
     for (let i = 1; i <= FRAME_COUNT; i++) {
       const img = new Image();
       const frameIndex = i.toString().padStart(3, "0");
-      img.src = `/sequence/ezgif-frame-${frameIndex}.png`;
+      img.src = `${basePath}/sequence/ezgif-frame-${frameIndex}.png`;
       loadedImages.push(img);
     }
     setImages(loadedImages);
