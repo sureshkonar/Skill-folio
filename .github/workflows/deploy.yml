@@ -32,6 +32,18 @@ jobs:
         with:
           static_site_generator: next
 
+      - name: Debug commit and config files
+        run: |
+          echo "GITHUB_SHA=$GITHUB_SHA"
+          ls -la next.config.* || true
+
+      - name: Remove conflicting Next config
+        run: |
+          # If an older branch/commit introduces next.config.js, prefer next.config.mjs.
+          if [ -f "next.config.js" ] && [ -f "next.config.mjs" ]; then
+            rm next.config.js
+          fi
+
       - name: Install dependencies
         run: npm install
 
