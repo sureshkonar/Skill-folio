@@ -44,7 +44,7 @@ export default function Contact() {
                         </a>
 
                         <div className="space-y-4">
-                            <p className="text-[10px] text-zinc-600 font-bold uppercase tracking-widest mb-6">>>> CONNECT_VIA_BUS_NODES</p>
+                            <p className="text-[10px] text-zinc-600 font-bold uppercase tracking-widest mb-6">&gt;&gt;&gt; CONNECT_VIA_BUS_NODES</p>
                             <div className="flex items-center gap-4">
                                 {[
                                     { icon: <Linkedin className="w-5 h-5" />, href: "https://www.linkedin.com/in/suresh-konar-779114198/" },
@@ -75,9 +75,9 @@ export default function Contact() {
                         <span>© 2025 PROTOCOL_LOCKED // ALL_RIGHTS_RESERVED</span>
                     </div>
                     <div className="flex gap-10">
-                        <a href="#about" className="hover:text-cyan-500 transition-colors italic tracking-tighter">>>> ABOUT_PARAM</a>
-                        <a href="#projects" className="hover:text-cyan-500 transition-colors italic tracking-tighter">>>> WORKS_REPO</a>
-                        <a href="#experience" className="hover:text-cyan-500 transition-colors italic tracking-tighter">>>> CORE_TELEMETRY</a>
+                        <a href="#about" className="hover:text-cyan-500 transition-colors italic tracking-tighter"&gt;&gt;&gt;> ABOUT_PARAM</a>
+                        <a href="#projects" className="hover:text-cyan-500 transition-colors italic tracking-tighter"&gt;&gt;&gt;> WORKS_REPO</a>
+                        <a href="#experience" className="hover:text-cyan-500 transition-colors italic tracking-tighter"&gt;&gt;&gt;> CORE_TELEMETRY</a>
                     </div>
                     <div className="text-zinc-800">BUILD: SDV_STABLE_V4</div>
                 </footer>

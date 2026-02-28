@@ -44,7 +44,7 @@ export default function About() {
 
                     <div className="space-y-12">
                         <div className="flex items-center gap-4">
-                            <span className="text-cyan-500 text-xs tracking-[0.2em] font-bold uppercase transition-all group-hover:tracking-[0.4em]">>>> IDENTITY_DECRYPT</span>
+                            <span className="text-cyan-500 text-xs tracking-[0.2em] font-bold uppercase transition-all group-hover:tracking-[0.4em]">&gt;&gt;&gt; IDENTITY_DECRYPT</span>
                             <div className="h-[1px] flex-1 bg-white/10" />
                         </div>
 
@@ -58,18 +58,18 @@ export default function About() {
 
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-6 border-t border-white/5">
                             <div>
-                                <p className="text-cyan-500 text-[10px] uppercase tracking-widest mb-3 font-bold">>>> EDUCATION_PARAM</p>
+                                <p className="text-cyan-500 text-[10px] uppercase tracking-widest mb-3 font-bold">&gt;&gt;&gt; EDUCATION_PARAM</p>
                                 <p className="text-white text-xs font-bold uppercase">B.Tech CS — VIT Bhopal</p>
                                 <p className="text-neutral-500 text-[10px] mt-1 italic">CGPA_REF: 8.43_SIGNAL</p>
                             </div>
                             <div>
-                                <p className="text-cyan-500 text-[10px] uppercase tracking-widest mb-3 font-bold">>>> CURRENT_THREAD</p>
+                                <p className="text-cyan-500 text-[10px] uppercase tracking-widest mb-3 font-bold">&gt;&gt;&gt; CURRENT_THREAD</p>
                                 <p className="text-white text-xs font-bold uppercase">Associate SWE</p>
                                 <p className="text-neutral-500 text-[10px] mt-1 italic">UNIT: APTIV_BENGALURU</p>
                             </div>
                             <div className="relative group">
                                 <div className="absolute -inset-2 bg-cyan-500/10 scale-0 group-hover:scale-100 transition-transform duration-500 rounded-lg" />
-                                <p className="text-cyan-500 text-[10px] uppercase tracking-widest mb-3 font-bold">>>> STATUS_FLAG</p>
+                                <p className="text-cyan-500 text-[10px] uppercase tracking-widest mb-3 font-bold">&gt;&gt;&gt; STATUS_FLAG</p>
                                 <p className="text-white text-xs font-bold uppercase italic">INNOVATING_FAST</p>
                                 <p className="text-neutral-500 text-[10px] mt-1 italic">OS: READY</p>
                             </div>

@@ -67,7 +67,7 @@ export default function Overlay() {
                     className="absolute inset-0 flex flex-col items-center justify-center text-center px-8"
                 >
                     <div className="mb-6 px-4 py-1 bg-cyan-500/10 border border-cyan-500/20 rounded-full text-[10px] text-cyan-500 tracking-[0.3em] font-bold uppercase">
-                        >>> SYSTEM_INIT_COMPLETE
+                        &gt;&gt;&gt; SYSTEM_INIT_COMPLETE
                     </div>
                     <h1 className="text-5xl md:text-8xl font-black text-white tracking-tighter uppercase italic drop-shadow-[0_0_15px_rgba(255,255,255,0.1)]">
                         Suresh <span className="text-cyan-500">Konar</span>

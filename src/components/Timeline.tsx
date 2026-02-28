@@ -58,7 +58,7 @@ export default function Timeline() {
                     <div>
                         <div className="flex items-center gap-2 mb-4">
                             <Zap className="w-4 h-4 text-cyan-500" />
-                            <span className="text-cyan-500 text-[10px] tracking-widest uppercase">>>> FAST_LANE_METRICS_READY</span>
+                            <span className="text-cyan-500 text-[10px] tracking-widest uppercase"&gt;&gt;&gt;> FAST_LANE_METRICS_READY</span>
                         </div>
                         <h2 className="text-4xl md:text-6xl font-black text-white tracking-tighter uppercase italic">
                             The <span className="text-cyan-500">Journey</span>
@@ -139,7 +139,7 @@ export default function Timeline() {
                                             rel="noopener noreferrer"
                                             className="inline-flex items-center gap-3 text-zinc-600 hover:text-cyan-500 text-[10px] font-bold uppercase tracking-[0.2em] transition-all group/link"
                                         >
-                                            >>> VERIFY_MIL_STONE_LOG
+                                            &gt;&gt;&gt; VERIFY_MIL_STONE_LOG
                                             <ExternalLink className="w-3 h-3 group-hover/link:translate-x-1 group-hover/link:-translate-y-1 transition-transform" />
                                         </a>
                                     </div>

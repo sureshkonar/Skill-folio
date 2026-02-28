@@ -41,7 +41,7 @@ export default function Projects() {
                     <div>
                         <div className="flex items-center gap-2 mb-4">
                             <Database className="w-4 h-4 text-cyan-500" />
-                            <span className="text-cyan-500 text-[10px] tracking-widest uppercase">>>> APP_REPOSITORY_LOADED</span>
+                            <span className="text-cyan-500 text-[10px] tracking-widest uppercase">&gt;&gt;&gt; APP_REPOSITORY_LOADED</span>
                         </div>
                         <h2 className="text-4xl md:text-6xl font-black text-white tracking-tighter uppercase italic">
                             Digital <span className="text-cyan-500 border-b-4 border-cyan-500/20">Cockpit</span>

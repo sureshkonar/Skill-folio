@@ -44,7 +44,7 @@ export default function Hackathons() {
                     <div>
                         <div className="flex items-center gap-2 mb-4">
                             <Radar className="w-4 h-4 text-cyan-500 animate-pulse" />
-                            <span className="text-cyan-500 text-[10px] tracking-widest uppercase">>>> RADAR_SCAN_ACTIVE</span>
+                            <span className="text-cyan-500 text-[10px] tracking-widest uppercase"&gt;&gt;&gt;> RADAR_SCAN_ACTIVE</span>
                         </div>
                         <h2 className="text-4xl md:text-6xl font-black text-white tracking-tighter uppercase italic">
                             Event <span className="text-cyan-500">Nodes</span>
