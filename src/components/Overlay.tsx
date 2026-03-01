@@ -79,7 +79,7 @@ export default function Overlay() {
                         </p>
                         <div className="h-[1px] w-8 bg-white/20" />
                     </div>
-                    <p className="text-zinc-600 text-xs mt-6 max-w-lg leading-relaxed uppercase">
+                    <p className="text-zinc-300 text-xs mt-6 max-w-lg leading-relaxed uppercase">
                         Architecting the next generation of software-defined vehicle ecosystems.
                         Engineering high-precision validation frameworks for global automotive OEMs.
                     </p>
