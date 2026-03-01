@@ -4,15 +4,18 @@
 
 A high-end scrollytelling portfolio redesigned with a comprehensive **Automotive HUD (Heads-Up Display)** and **Digital Cockpit** aesthetic. This project bridges the gap between creative front-end design and system-level automotive engineering.
 
+## 🌐 Live Website
+[https://sureshkonar.github.io/Skill-folio/](https://sureshkonar.github.io/Skill-folio/)
+
 ## 📺 Demo Walkthrough
-![Portfolio Demo](public/assets/readme/demo.webp)
+![Portfolio Demo](public/assets/readme/demo.png)
 
 ## 🏎️ Design Aesthetic
 The portfolio is built on a technical design language inspired by modern **Software Defined Vehicle (SDV)** interfaces:
 - **Smart Camera HUD**: Responsive hero section with dynamic tracking overlays and system metadata.
 - **Digital Cockpit Widgets**: Project showcases styled as glassmorphic infotainment units.
 - **Professional Telemetry**: Experience section featuring skill abstraction matrices and data-driven performance metrics.
-- **Fast Lane Timeline**: Mission-critical milestones visualized through high-beam light trails.
+- **Career Console Game**: Keyboard-controlled car map with checkpoint-based achievements and progress tracking.
 - **V2X Communication**: Contact section themed as a vehicle-to-everything handshake protocol.
 
 ## 🛠️ Technical Stack
@@ -38,7 +41,12 @@ Interactive glassmorphic widgets displaying subsystem architecture and project t
 
 ### Light Trail (Timeline)
 ![Timeline Section](public/assets/readme/timeline.png)
-Sequential flow of hardware and software milestones with intense "High Beam" glow effects.
+Interactive game console section where users navigate a car across a map to unlock milestone checkpoints.
+
+#### Career Console Controls
+- `Arrow Keys`: Move the car
+- `Ctrl + Arrow`: Boost move (2 tiles)
+- On-screen directional buttons available for click/touch interaction
 
 ### Handshake Protocol (Contact)
 ![Contact Section](public/assets/readme/contact.png)
@@ -59,6 +67,12 @@ bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+For production export / GitHub Pages deployment:
+
+```bash
+npm run build
+```
 
 ---
 **BUILD: SDV_STABLE_V4** | **PROTOCOL_LOCKED**
