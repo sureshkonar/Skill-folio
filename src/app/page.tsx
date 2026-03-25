@@ -6,6 +6,7 @@ import Hackathons from "@/components/Hackathons";
 import Experience from "@/components/Experience";
 import Contact from "@/components/Contact";
 import Timeline from "@/components/Timeline";
+import Recommendations from "@/components/Recommendations";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <Timeline />
       <Projects />
       <Hackathons />
+      <Recommendations />
       <Contact />
     </main>
   );
